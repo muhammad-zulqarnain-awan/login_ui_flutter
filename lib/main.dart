@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               Row(
@@ -50,71 +50,100 @@ class MyApp extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 50,),
-              
-              Text("Login", style: TextStyle(fontFamily: "Rubik Medium", fontSize: 24, color: Color(0xff3a4167)),),
+              const SizedBox(
+                height: 50,
+              ),
 
-              SizedBox(height: 20,),
+              const Text(
+                "Login",
+                style: TextStyle(
+                    fontFamily: "Rubik Medium",
+                    fontSize: 24,
+                    color: Color(0xff3a4167)),
+              ),
 
-              Text("Welcome Back to the \n Maintenance Box", style: TextStyle(fontFamily: "Rubik Regular", fontSize: 18), textAlign: TextAlign.center,),
+              const SizedBox(
+                height: 20,
+              ),
+
+              const Text(
+                "Welcome Back to the \n Maintenance Box",
+                style: TextStyle(fontFamily: "Rubik Regular", fontSize: 18),
+                textAlign: TextAlign.center,
+              ),
 
               Padding(
-                padding: EdgeInsets.only(left: 25, right: 25, top: 35),
+                padding: const EdgeInsets.only(left: 25, right: 25, top: 35),
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: "Email",
-                    prefixIcon: Icon(Icons.alternate_email, color: Colors.black54),
+                    prefixIcon:
+                        const Icon(Icons.alternate_email, color: Colors.black54),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xffE4E7EB)),
-                      borderRadius: BorderRadius.circular(10)
-                    ),
+                        borderSide: const BorderSide(color: Color(0xffE4E7EB)),
+                        borderRadius: BorderRadius.circular(10)),
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Color(0xffE4E7EB))
-                    ),
-                    fillColor: Color(0xffE4E7EB),
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: Color(0xffE4E7EB))),
+                    fillColor: const Color(0xffE4E7EB),
                     filled: true,
                   ),
                 ),
-              ),  // email input box
+              ), // email input box
               Padding(
-                padding: EdgeInsets.only(left: 25, right: 25, top: 35),
+                padding: const EdgeInsets.only(left: 25, right: 25, top: 35),
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: "Password",
-                    prefixIcon: Icon(Icons.lock_open, color: Colors.black54),
-                    suffixIcon: Icon(Icons.remove_red_eye_outlined, color: Colors.black54,),
+                    prefixIcon: const Icon(Icons.lock_open, color: Colors.black54),
+                    suffixIcon: const Icon(
+                      Icons.remove_red_eye_outlined,
+                      color: Colors.black54,
+                    ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xffE4E7EB)),
-                      borderRadius: BorderRadius.circular(10)
-                    ),
+                        borderSide: const BorderSide(color: Color(0xffE4E7EB)),
+                        borderRadius: BorderRadius.circular(10)),
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Color(0xffE4E7EB))
-                    ),
-                    fillColor: Color(0xffE4E7EB),
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: const BorderSide(color: Color(0xffE4E7EB))),
+                    fillColor: const Color(0xffE4E7EB),
                     filled: true,
                   ),
                 ),
-              ),  // password input box
+              ), // password input box
 
-              SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               Container(
                 width: 300,
-                  height: 50,
-                  child: Text("Forget Password?", style: TextStyle(fontFamily: "Rubik Medium", fontSize: 16), textAlign: TextAlign.right,),
+                height: 50,
+                child: const Text(
+                  "Forget Password?",
+                  style: TextStyle(fontFamily: "Rubik Medium", fontSize: 16),
+                  textAlign: TextAlign.right,
+                ),
               ),
 
-              SizedBox(height: 50,),
+              const SizedBox(
+                height: 50,
+              ),
 
               Container(
                 width: 280,
                 height: 55,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffF9703B),
+                  color: const Color(0xffF9703B),
                 ),
-                child: Center(child: Text("Login", style: TextStyle(fontFamily: "Rubik Medium", fontSize: 24, color: Colors.white),)),
+                child: const Center(
+                    child: Text(
+                  "Login",
+                  style: TextStyle(
+                      fontFamily: "Rubik Medium",
+                      fontSize: 24,
+                      color: Colors.white),
+                )),
               ),
 
               Container(
@@ -124,9 +153,21 @@ class MyApp extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: const [
-                    Text("Don't have an account?", style: TextStyle(fontFamily: "Rubik Regular", fontSize: 16),),
-                    SizedBox(width: 5,),
-                    Text("Sign Up", style: TextStyle(fontFamily: "Rubik Regular", fontSize: 16, color: Color(0xffF9703B)),)
+                    Text(
+                      "Don't have an account?",
+                      style:
+                          TextStyle(fontFamily: "Rubik Regular", fontSize: 16),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "Sign Up",
+                      style: TextStyle(
+                          fontFamily: "Rubik Regular",
+                          fontSize: 16,
+                          color: Color(0xffF9703B)),
+                    )
                   ],
                 ),
               )
